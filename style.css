@@ -1,0 +1,73 @@
+/*
+ * Color palette
+ *
+ * background    #232323
+ * text          #EEEDEB
+ * text soft     #8E8E8E
+ * links         #47A9AA
+ */
+
+body {
+    background-color: #232323;
+    color: #EEEDEB;
+    font-family: "Merriweather Sans", "Open Sans", "Roboto";
+    margin: 1.5em;
+}
+
+a {
+    color: #47A9AA;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main main"
+        "footer footer footer";
+    gap: 20px;
+}
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    grid-area: menu;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 10vw;
+}
+
+.main {
+    grid-area: main;
+
+    text-align: justify;
+}
+
+.footer {
+    grid-area: footer;
+
+    color: #8E8E8E;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    .container {
+        grid-template-areas:
+            "header"
+            "menu"
+            "main"
+            "footer";
+    }
+
+    .menu {
+        width: auto;
+    }
+}
