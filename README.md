@@ -10,4 +10,4 @@ To test the website locally you can run the following
 python3 -m http.server
 ```
 
-Then, you can open a web broser and connect to the local server.
+Then, you can open a web browser and connect to the local http server.
