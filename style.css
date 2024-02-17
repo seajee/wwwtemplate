@@ -1,21 +1,21 @@
-/*
- * Color palette
- *
- * background    #232323
- * text          #EEEDEB
- * text soft     #8E8E8E
- * links         #47A9AA
- */
+:root {
+    --black: #232323;
+    --green: #317B22;
+    --lime:  #60935D;
+    --azure: #6CCFF6;
+    --white: #EEEDEB;
+    --gray:  #666666;
+}
 
 body {
-    background-color: #232323;
-    color: #EEEDEB;
+    background-color: var(--black);
+    color: var(--white);
     font-family: "Merriweather Sans", "Open Sans", "Roboto";
     margin: 1.5em;
 }
 
 a {
-    color: #47A9AA;
+    color: var(--azure);
 }
 
 .container {
@@ -54,7 +54,7 @@ a {
 .footer {
     grid-area: footer;
 
-    color: #8E8E8E;
+    color: var(--gray);
     text-align: center;
 }
 
